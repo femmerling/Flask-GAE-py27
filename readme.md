@@ -28,7 +28,7 @@ here is a list of assembled components
 * Flask
 * Jinja
 * werkzeug
-* gaeUtils from deck [http://github.com/deck/gae-utils](http://github.com/deck/gae-utils)
+* gaeUtils from blossom [http://github.com/blossom/gae-utils](http://github.com/blossom/gae-utils)
 * gaePath [http://github.com/nikgraf/gae-path](http://github.com/nikgraf/gae-path)
 
 # Dependencies
