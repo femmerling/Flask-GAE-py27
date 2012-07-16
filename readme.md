@@ -1,8 +1,8 @@
 # Motivation
 
-We are currently migrating our projects from [django](http://www.djangoproject.com) to [flask](http://flask.pocoo.org).
-Since we also intend to use flask for entirely new projects, it made sense to save on initial setup time.
-So we created a project skeleton which includes some of the things (libs and configuration) that we pick for most projects.
+This is a modification of Blossom's [Flask GAE Skeleton](https://github.com/blossom/flask-gae-skeleton) . I modify this to run under the Python 2.7 Runtime. Credits to Thomas Schranz, Allan Berger, and Nik Graf for the initial skeleton.
+
+This is a project skeleton which includes some of the things (libs and configuration) that I pick for most projects.
 
 # Components
 
@@ -35,21 +35,14 @@ here is a list of assembled components
 
 ## General
 
-* Python 2.5
+* Python 2.7
 * Google AppEngine SDK [http://code.google.com/appengine/downloads.html](http://code.google.com/appengine/downloads.html)
-
-## Testing
-
-* lxml [http://pypi.python.org/pypi/lxml](http://pypi.python.org/pypi/lxml)
-* nose [http://pypi.python.org/pypi/nose](http://pypi.python.org/pypi/nose)
-* NoseGAE [http://pypi.python.org/pypi/NoseGAE](http://pypi.python.org/pypi/NoseGAE)
-* selenium 2+ [http://pypi.python.org/pypi/selenium](http://pypi.python.org/pypi/selenium)
 
 # Setup
 
 clone repository
 
-    git clone https://github.com/deck/flask-gae-skeleton.git <project_name>
+    git clonehttps://github.com/femmerling/Flask-GAE-py27.git <project_name>
 
 change to directory of <project_name>
 
@@ -74,7 +67,7 @@ add replace remote
 
 Add the remote and merge in all changes and removes the old stuff again.
 
-    git remote add skeleton https://github.com/deck/flask-gae-skeleton.git
+    git remote add skeleton https://github.com/femmerling/Flask-GAE-py27.git
     git pull skeleton
     git checkout -b skeleton remotes/skeleton/master
     git rebase <your_development_branch like master>
@@ -92,24 +85,10 @@ Go to path "code" and run
 
     dev_appserver.py .
 
-## Run Test Enviroment
-
-Go to path "code" and run
-
-    nosetests-2.5 --with-gae tests/
-
 ## Run Remote Console
 
 Go to path "code" and run
 
-    python2.5 appengine_console.py <app-id>
+    python appengine_console.py <app-id>
 
-# TODO
 
-things we still need to extract and clean up from other projects
-
-* add tests for decorators
-* set port for testing via configuration in settings or test_settings
-* kill subprocess dev_appserver for selenium tests also in windows (see python2.6 implementation how to kill a process)
-* add coverage
-* add fixture (http://farmdev.com/projects/fixture/using-fixture-with-appengine.html)
