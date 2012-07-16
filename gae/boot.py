@@ -1,4 +1,4 @@
-from wsgiref.handlers import CGIHandler
+#from wsgiref.handlers import CGIHandler
 from google.appengine.ext.appstats import recording
 import sys, os
 
@@ -20,4 +20,5 @@ if 'SERVER_SOFTWARE' in os.environ and os.environ['SERVER_SOFTWARE'].startswith(
     from werkzeug import DebuggedApplication
     app = DebuggedApplication(app, evalex=True)
 
-CGIHandler().run(recording.appstats_wsgi_middleware(app))
+#CGIHandler().run(recording.appstats_wsgi_middleware(app))
+app = recording.appstats_wsgi_middleware(app)

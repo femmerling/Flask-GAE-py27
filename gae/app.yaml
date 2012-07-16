@@ -1,12 +1,13 @@
-application: deck-flask-gae
+application: experiment27
 version: 1
-runtime: python
+runtime: python27
 api_version: 1
+threadsafe: true
 
 builtins:
 - appstats: on
 - remote_api: on
-- datastore_admin: on
+#- datastore_admin: on
 
 admin_console:
   pages:
@@ -23,4 +24,4 @@ handlers:
   static_dir: static
 
 - url: /.*
-  script: boot.py
+  script: boot.app
