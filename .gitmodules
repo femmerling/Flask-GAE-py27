@@ -6,4 +6,10 @@
 	url = https://github.com/mitsuhiko/jinja2.git
 [submodule "submodules/werkzeug"]
 	path = submodules/werkzeug
-	url = https://github.com/mitsuhiko/werkzeug.git
+  url = https://github.com/mitsuhiko/werkzeug.git
+[submodule "submodules/gaePath"]
+	path = gae/lib/gaePath
+	url = https://github.com/nikgraf/gae-path.git
+[submodule "submodules/gaeUtils"]
+	path = gae/lib/gaeUtils
+	url = https://github.com/blossom/gae-utils.git
