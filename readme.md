@@ -42,7 +42,7 @@ here is a list of assembled components
 
 clone repository
 
-    git clonehttps://github.com/femmerling/Flask-GAE-py27.git <project_name>
+    git clone https://github.com/femmerling/Flask-GAE-py27.git <project_name>
 
 change to directory of <project_name>
 
