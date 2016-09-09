@@ -1,25 +1,8 @@
 # Motivation
 
-This is a modification of Blossom's [Flask GAE Skeleton](https://github.com/blossom/flask-gae-skeleton) . I modify this to run under the Python 2.7 Runtime. Credits to Thomas Schranz, Allan Berger, and Nik Graf for the initial skeleton.
-
-This is a project skeleton which includes some of the things (libs and configuration) that I pick for most projects.
+Running apps on appengine is really nice. However, you need a good skeleton to get you going fast. This is a project skeleton which includes some of the things (libs and configuration) that I pick for most projects. You can freely use this.
 
 # Components
-
-## General
-
-here is a list of assembled components
-
-* flask decorators for (cache_page, login_required)
-* gae specific monkeypatch for werkzeug debugger [http://dev.pocoo.org/projects/werkzeug/wiki/UsingDebuggerWithAppEngine](http://dev.pocoo.org/projects/werkzeug/wiki/UsingDebuggerWithAppEngine)
-* a simple user model
-* google appengine specific development/production environment switch
-* google appengine appstats configured
-* google appengine memcache caching backend configured
-* favicon.ico stub to avoid unneeded error logs
-* deck module with 26 char uuid generator
-* deck module with JsonProperty for the datastore
-* lib directory for external dependencies prepended to syspath
 
 ## Libraries
 
@@ -28,8 +11,6 @@ here is a list of assembled components
 * Flask
 * Jinja
 * werkzeug
-* gaeUtils from blossom [http://github.com/blossom/gae-utils](http://github.com/blossom/gae-utils)
-* gaePath [http://github.com/nikgraf/gae-path](http://github.com/nikgraf/gae-path)
 
 # Dependencies
 
@@ -91,4 +72,7 @@ Go to path "code" and run
 
     python appengine_console.py <app-id>
 
+# License
+
+MIT license
 

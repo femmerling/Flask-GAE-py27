@@ -1,4 +1,4 @@
-application: experiment27
+application: unnamed
 version: 1
 runtime: python27
 api_version: 1
@@ -7,7 +7,6 @@ threadsafe: true
 builtins:
 - appstats: on
 - remote_api: on
-#- datastore_admin: on
 
 admin_console:
   pages:
@@ -25,3 +24,4 @@ handlers:
 
 - url: /.*
   script: boot.app
+

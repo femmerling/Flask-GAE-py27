@@ -1,3 +1,9 @@
 *.pyc
 *.swo
+*.swp
 .DS_Store
+.sass-cache
+gae/static/js/app/*
+gae/static/css/*
+!.gitkeep
+

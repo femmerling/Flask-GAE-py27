@@ -1,15 +1,18 @@
-[submodule "submodules/flask"]
-	path = submodules/flask
-	url = https://github.com/mitsuhiko/flask.git
-[submodule "submodules/jinja2"]
-	path = submodules/jinja2
-	url = https://github.com/mitsuhiko/jinja2.git
-[submodule "submodules/werkzeug"]
-	path = submodules/werkzeug
-  url = https://github.com/mitsuhiko/werkzeug.git
-[submodule "submodules/gaePath"]
-	path = gae/lib/gaePath
-	url = https://github.com/nikgraf/gae-path.git
-[submodule "submodules/gaeUtils"]
-	path = gae/lib/gaeUtils
-	url = https://github.com/blossom/gae-utils.git
+[submodule "libs/flask-pkg"]
+	path = libs/flask-pkg
+	url = git@github.com:pallets/flask.git
+[submodule "libs/jinja-pkg"]
+	path = libs/jinja-pkg
+	url = https://github.com/pallets/jinja.git
+[submodule "libs/werkzeug-pkg"]
+	path = libs/werkzeug-pkg
+	url = git@github.com:pallets/werkzeug.git
+[submodule "libs/itsdangerous-pkg"]
+	path = libs/itsdangerous-pkg
+	url = git@github.com:pallets/itsdangerous.git
+[submodule "libs/click-pkg"]
+	path = libs/click-pkg
+	url = git@github.com:pallets/click.git
+[submodule "libs/markupsafe-pkg"]
+	path = libs/markupsafe-pkg
+	url = git@github.com:pallets/markupsafe.git
