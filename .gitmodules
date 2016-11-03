@@ -16,3 +16,6 @@
 [submodule "libs/markupsafe-pkg"]
 	path = libs/markupsafe-pkg
 	url = git@github.com:pallets/markupsafe.git
+[submodule "libs/debug"]
+	path = libs/debug
+	url = git@github.com:femmerling/debug.git
